@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+/* Form Styling */
+.form-container {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Analysis Section */
+.analysis {
+    background-color: #e7f7e7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

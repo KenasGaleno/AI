@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Images are {% if similarity %} Similar {% else %} Not Similar {% endif %}</p>
+
+        <h2>Facial Attributes of Image 1:</h2>
+        <div class="analysis">
+            <ul>
+                <li>Age: {{ analysis1[0]['age'] }}</li>
+                <li>Gender: {{ analysis1[0]['dominant_gender'] }}</li>
+                <li>Emotion: {{ analysis1[0]['dominant_emotion'] }}</li>
+                <li>Race: {{ analysis1[0]['dominant_race'] }}</li>
+            </ul>
+        </div>
+
+        <h2>Facial Attributes of Image 2:</h2>
+        <div class="analysis">
+            <ul>
+                <li>Age: {{ analysis2[0]['age'] }}</li>
+                <li>Gender: {{ analysis2[0]['dominant_gender'] }}</li>
+                <li>Emotion: {{ analysis2[0]['dominant_emotion'] }}</li>
+                <li>Race: {{ analysis2[0]['dominant_race'] }}</li>
+            </ul>
+        </div>
+
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>

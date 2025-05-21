@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Similarity & Attribute Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Similarity & Attribute Analysis</h1>
+        <div class="form-container">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="image1">Upload Image 1:</label>
+                    <input type="file" name="image1" required><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="image2">Upload Image 2:</label>
+                    <input type="file" name="image2" required><br><br>
+                </div>
+                <button type="submit">Predict Similarity</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
